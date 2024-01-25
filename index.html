@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <img src="imgs/L.png" class="logo" />
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Projects</a></li>
+              <li><a href="#portfolio">Certifications</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <div class="header-work">
+            <p>Engineerning Graduate</p>
+            <h1>Hi,I'm<span>Lokesh</span><br/>From Hyderabad</h1>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <main>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="imgs/loki1.jpeg" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>
+                Motivated graduate seeking an opportunity to contribute to an
+                organization's growth while continuously enhancing my knowledge
+                and skills. Dedicated to delivering valuable results and
+                committed to professional development.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('study1')">
+                  Bachelors Of Technology
+                </p>
+                <p class="tab-links" onclick="opentab('study2')">Diploma</p>
+                <p class="tab-links" onclick="opentab('study3')">
+                  Secondary Education
+                </p>
+              </div>
+              <div class="tab-content active-tab" id="study1">
+                <ul>
+                  <li>
+                    <span>College</span><br />Mallareddy college of
+                    <br />engineering and technology
+                  </li>
+                  <br />
+                  <li>
+                    <span>Branch</span><br />Electronics and communication<br />engineering
+                  </li>
+                  <br />
+                  <li><span>CGPA-</span>8.16<br />2021-2018</li>
+                </ul>
+              </div>
+              <div class="tab-content" id="study2">
+                <ul>
+                  <li>
+                    <span>College</span><br />Government polytechnic college
+                    <br />masab tank
+                  </li>
+                  <br />
+                  <li>
+                    <span>Branch</span><br />
+                    Diploma in Electronics and communication<br />engineering
+                  </li>
+                  <br />
+                  <li><span>CGPA-</span>9.33<br />2018-2021</li>
+                </ul>
+              </div>
+              <div class="tab-content" id="study3">
+                <ul>
+                  <li><span>School</span><br />Genius High school</li>
+                  <br />
+                  <li><span>CGPA-</span>9.0<br />2018</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------projects------------------->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Quick Revision of Basics</h2>
+              <p>
+                "Quick Revision of Basics" is a simple web page using HTML and
+                CSS to provide a concise refresher on fundamental concepts in a
+                specific topic. It serves as a user-friendly reference guide,
+                showcasing my web development skills and effective presentation
+                of information.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-python"></i>
+              <h2>Automatic letter generator</h2>
+              <p>
+                The "Automatic Letter Generator" is a Python project that
+                automates formal letter generation based on user-specified
+                reasons, simplifying and standardizing the process of creating
+                formal correspondence.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-gears"></i>
+              <h2>Entry-Exit Count Based Automation</h2>
+              <p>
+                "Entry-Exit Count Based Automation" is an embedded systems
+                project that automates electrical appliances, like bulbs,
+                according to the count of entries and exits. It efficiently
+                controls the appliances based on occupancy, improving energy
+                efficiency and convenience.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------Portfolio-->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">Certifications</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="imgs/ccf2.PNG" alt="" />
+              <div class="layer">
+                <h3>Certifed from Codechef</h3>
+                <p>Problem Solving in C</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="imgs/work-4.JPG" alt="" />
+              <div class="layer">
+                <h3>Certifed from HackerRank</h3>
+                <p>Java programming Language</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="imgs/ccf1.PNG" alt="" />
+              <div class="layer">
+                <h3>Certifed from Codechef</h3>
+                <p> c programming</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!------------------contact-------------->
+      <div id="contact">
+        <div class="cantainer">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i></i>bogireddylokesh@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i></i>8688338928</p>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="imgs/my-cv.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit"class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright@Lokesh<i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-content");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemeu.style.right ="0";
+      }
+      function closemenu(){
+        sidemeu.style.right="-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzP-LkZhD0CE-s7e-1rrh5NpXYR2e-8d2gXvqRxIC7mbE16C0JQR2QnuK0BiSTny_ZHEw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },1000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
